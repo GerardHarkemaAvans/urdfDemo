@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="ur5e">
+
+    <material name="blue">
+        <color rgba="0 0 0.8 1" />
+    </material>
+    <material name="white">
+        <color rgba="1 1 1 1" />
+    </material>
+    <material name="red">
+        <color rgba="0.8 0 0 1" />
+    </material>
+    <material name="green">
+        <color rgba="0 0.8 0 1" />
+    </material>
+    <material name="LightGrey">
+        <color rgba="0.7 0.7 0.7 1.0" />
+    </material>
+
+
+  <link name="world" />
+  <link name="baseplate_link">
+    <visual>
+      <origin xyz="0 0 0.0" />
+      <geometry>
+        <box size="1.1 0.7 0.03" />
+      </geometry>
+      <material name="LightGrey"/>
+    </visual>
+  </link>
+  
+  <joint name="baseplate_joint" type="fixed">
+    <origin xyz="0 0 0" />
+    <parent link="world" />
+    <child link="baseplate_link" />
+  </joint>
+ 
+   <link name="mountingplate_link">
+    <visual>
+      <origin xyz="0 0 0.0" />
+      <geometry>
+        <box size="0.3 0.3 0.012" />
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <joint name="mountingplate_joint" type="fixed">
+    <origin xyz="0.0 -0.20 0.021" />
+    <parent link="baseplate_link" />
+    <child link="mountingplate_link" />
+  </joint>
+ 
+  
+</robot>
+

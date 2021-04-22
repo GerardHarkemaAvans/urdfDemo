@@ -1,0 +1,2 @@
+# Binpicking Base package
+# urdfDemo
