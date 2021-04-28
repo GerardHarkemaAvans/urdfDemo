@@ -15,6 +15,12 @@
        robot1_wrist_1_joint       : -1.570796326795
        robot1_wrist_2_joint       : -1.534353852013356
        robot1_wrist_3_joint       : 0.0
+       robot2_shoulder_pan_joint  : 1.5707963267950005
+       robot2_shoulder_lift_joint : -1.5525750894041779
+       robot2_elbow_joint         : 1.5525750894041783
+       robot2_wrist_1_joint       : -1.570796326795
+       robot2_wrist_2_joint       : -1.534353852013356
+       robot2_wrist_3_joint       : 0.0
     </rosparam>
   </node>
 

@@ -62,14 +62,14 @@
   </joint>
 
   <!-- robot to mouting_plate. -->
-  <joint name="mountingplate_link" type="fixed">
+  <joint name="mountingplate_to_robot_joint" type="fixed">
     <parent link="mountingplate_link" />
     <child link="robot1_base_link" />
     <origin xyz="0.0 0.0 0.01" rpy="0.0 0.0 0.0"/>
   </joint>
 
 
-  <joint name="beugel_to_vacuum_gripper" type ="fixed">
+  <joint name="robot1_to_vacuum_gripper_joint" type ="fixed">
     <parent link="robot1_tool0" />
     <child link="vacuum_gripper_base_link" />
     <origin xyz="0.00072798 -0.089658 0" rpy="0.0 0.0 ${pi}"/>
